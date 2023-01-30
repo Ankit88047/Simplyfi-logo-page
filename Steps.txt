@@ -1,0 +1,11 @@
+Here's a possible algorithm using graph theory:
+
+Step1. Create a directed graph with cities as nodes and train tickets as edges.
+Step2. Start with the node "Kiev" as the current node.
+Step3. Find an edge leaving from the current node and mark it as visited.
+Step4. Make the node at the end of the edge the new current node.
+Step5. Repeat steps 3 and 4 until all edges have been visited or there is no outgoing edge from the current node.
+Step6. The visited edges represent the route that your son took.
+A possible data structure for the graph could be an adjacency list, where each node is associated with a list of outgoing edges.
+To implement step 3, you can use a priority queue to sort the edges based on their destination nodes,
+and always choose the edge leading to a city that has not been visited yet.
